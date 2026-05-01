@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="GOSIM Shenzhen 2026 is a Mid-October 2026 open-source AI, robotics, edge systems, and developer infrastructure conference in Shenzhen, China."
+    >
+    <title>GOSIM Shenzhen 2026</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="assets/shenzhen-skyline-night.jpeg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="scroll-meter" aria-hidden="true"></div>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand-mark" href="#top" aria-label="GOSIM Shenzhen 2026 home">
+        <span>GOSIM</span>
+        <span>Shenzhen 2026</span>
+      </a>
+      <!-- Updates nav link hidden until the updates section returns. -->
+      <nav class="nav-links" aria-label="Conference sections" hidden aria-hidden="true">
+        <a href="#updates">Updates</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="GOSIM Shenzhen 2026 introduction">
+        <div class="hero__image" role="img" aria-label="Shenzhen skyline at night"></div>
+        <div class="hero__lights hero__lights--warm" aria-hidden="true"></div>
+        <div class="hero__lights hero__lights--cool" aria-hidden="true"></div>
+        <div class="hero__lights hero__lights--accent" aria-hidden="true"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">Mid-October 2026 · Shenzhen, China</p>
+          <h1>
+            <span>GOSIM</span>
+            <span class="hero__city-word">Shenzhen</span>
+            <span>2026</span>
+          </h1>
+          <p class="hero__lead">
+            Open-source AI, robotics, edge systems, and developer infrastructure in China's fastest-moving hardware city.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <button class="button button--primary" type="button" disabled aria-disabled="true">More to Come</button>
+          </div>
+        </div>
+        <div class="hero__lower" aria-label="Conference highlights">
+          <p>
+            <strong>Agentic AI</strong>
+            <span>MCP · A2A · edge AI · multi-agent systems</span>
+          </p>
+          <p>
+            <strong>Open Source Robotics</strong>
+            <span>Embodied AI · OpenArm · autonomous machines</span>
+          </p>
+          <p>
+            <strong>Open Source Models</strong>
+            <span>Language · vision · audio · video</span>
+          </p>
+          <p>
+            <strong>Spotlight &amp; Hackathons</strong>
+            <span>Frontier Creators · robotics · agentic builds</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Future Shenzhen section: keep hidden until the full landing page returns. -->
+      <section class="city-section section-image" id="city" aria-labelledby="city-heading" hidden aria-hidden="true">
+        <div class="city-copy reveal">
+          <div class="section-kicker">Why Shenzhen</div>
+          <h2 id="city-heading">China's hardware hub, built for iteration.</h2>
+          <p>
+            Shenzhen compresses Huaqiangbei sourcing, factory floors, robotics labs, chips, sensors, and software teams into one unusually fast product ecosystem. For an open-source technology conference, the city is more than a backdrop. It is where ideas can move from repo to prototype.
+          </p>
+        </div>
+        <div class="city-facts" aria-label="Shenzhen context">
+          <p><strong>Huaqiangbei</strong> components, boards, modules, and repair culture at street level</p>
+          <p><strong>Factories</strong> supply chains close enough for rapid hardware iteration</p>
+          <p><strong>AI Devices</strong> open software meeting robotics, sensors, and edge compute</p>
+        </div>
+      </section>
+
+      <!-- Updates section hidden until venue, speakers, and CFP details are ready to share. -->
+      <section class="updates-section section-light" id="updates" aria-labelledby="updates-heading" hidden aria-hidden="true">
+        <div class="updates-inner">
+          <div class="updates-copy reveal">
+            <div class="section-kicker">Stay Close</div>
+            <h2 id="updates-heading">Be first to hear when venue, speakers, and CFP details are announced.</h2>
+          </div>
+          <form class="updates-form reveal" name="interest" action="#" method="post">
+            <label for="email">Email</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <button type="submit">Get Updates</button>
+            </div>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>GOSIM Shenzhen 2026</p>
+      <p>
+        Photo:
+        <a href="https://commons.wikimedia.org/wiki/File:Shenzhen_Skyline_At_Night_(214551663).jpeg">
+          Shenzhen Skyline At Night
+        </a>
+        by Andreas Bunen, CC BY 3.0.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

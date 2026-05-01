@@ -1,0 +1,38 @@
+- generic [active] [ref=e1]:
+  - banner "Primary" [ref=e2]:
+    - link "GOSIM Shenzhen 2026 home" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e4]: GOSIM
+      - generic [ref=e5]: Shenzhen 2026
+  - main [ref=e6]:
+    - region "GOSIM Shenzhen 2026 introduction" [ref=e7]:
+      - img "Shenzhen skyline at night" [ref=e8]
+      - generic [ref=e9]:
+        - paragraph [ref=e10]: Mid-October 2026 · Shenzhen, China
+        - heading "GOSIM Shenzhen 2026" [level=1] [ref=e11]:
+          - generic [ref=e12]: GOSIM
+          - generic [ref=e13]: Shenzhen
+          - generic [ref=e14]: "2026"
+        - paragraph [ref=e15]: Open-source AI, robotics, edge systems, and developer infrastructure in China's fastest-moving hardware city.
+        - generic "Primary actions" [ref=e16]:
+          - button "More to Come" [disabled]
+      - generic "Conference highlights" [ref=e17]:
+        - paragraph [ref=e18]:
+          - strong [ref=e19]: Agentic AI
+          - generic [ref=e20]: MCP · A2A · edge AI · multi-agent systems
+        - paragraph [ref=e21]:
+          - strong [ref=e22]: Open Source Robotics
+          - generic [ref=e23]: Embodied AI · OpenArm · autonomous machines
+        - paragraph [ref=e24]:
+          - strong [ref=e25]: Open Source Models
+          - generic [ref=e26]: Language · vision · audio · video
+        - paragraph [ref=e27]:
+          - strong [ref=e28]: Spotlight & Hackathons
+          - generic [ref=e29]: Frontier Creators · robotics · agentic builds
+  - contentinfo [ref=e30]:
+    - paragraph [ref=e31]: GOSIM Shenzhen 2026
+    - paragraph [ref=e32]:
+      - text: "Photo:"
+      - link "Shenzhen Skyline At Night" [ref=e33] [cursor=pointer]:
+        - /url: https://commons.wikimedia.org/wiki/File:Shenzhen_Skyline_At_Night_(214551663).jpeg
+      - text: by Andreas Bunen, CC BY 3.0.
