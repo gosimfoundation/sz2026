@@ -680,6 +680,26 @@ section {
   }
 }
 
+/* Short viewports: tighten the header-to-date spacing and let the
+   highlights strip flow instead of overlapping the CFP button. */
+@media (max-height: 840px) {
+  .hero {
+    align-content: start;
+    min-height: auto;
+    padding-top: 104px;
+    padding-bottom: 40px;
+  }
+
+  .hero__content {
+    padding-top: 0;
+  }
+
+  .hero__lower {
+    position: static;
+    margin-top: 40px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
