@@ -7,6 +7,7 @@
   --paper-muted: #5d574d;
   --accent: #ffb545;
   --city-accent: #b8ff5c;
+  --button-accent: #63d7ff;
   --line-dark: rgba(255, 248, 236, 0.18);
   --line-light: rgba(24, 23, 19, 0.16);
   --max: 1180px;
@@ -295,6 +296,18 @@ h1 span {
   transform: translateY(-2px);
 }
 
+.button__icon {
+  width: 1em;
+  height: 1em;
+  margin-left: 8px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
 .button[disabled],
 .button[aria-disabled="true"] {
   cursor: not-allowed;
@@ -307,7 +320,11 @@ h1 span {
   transform: none;
 }
 
-.button--primary,
+.button--primary {
+  background: var(--button-accent);
+  color: var(--paper-ink);
+}
+
 .updates-form button {
   background: var(--accent);
   color: var(--paper-ink);

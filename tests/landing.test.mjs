@@ -34,6 +34,22 @@ test('teaser page keeps only concise navigable sections and update form', async 
   assert.match(html, /name="interest"/);
 });
 
+test('hero CTA links to the call for proposals', async () => {
+  const html = await read('index.html');
+  const css = await read('styles.css');
+
+  assert.match(
+    html,
+    /<a class="button button--primary" href="https:\/\/cfp\.gosim\.org" target="_blank" rel="noopener" aria-label="Call for Proposals \(opens in a new window\)">\s*<span>Call for Proposals<\/span>\s*<svg class="button__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">/
+  );
+  assert.doesNotMatch(html, />More to Come</);
+  assert.doesNotMatch(html, /button class="button button--primary"[^>]*disabled/);
+  assert.match(css, /--button-accent:\s*#63d7ff;/);
+  assert.match(css, /\.button--primary\s*{[^}]*background:\s*var\(--button-accent\)/s);
+  assert.doesNotMatch(css, /\.button--primary\s*{[^}]*background:\s*var\(--city-accent\)/s);
+  assert.match(css, /\.button__icon\s*{[^}]*width:\s*1em;[^}]*height:\s*1em;/s);
+});
+
 test('Shenzhen section is preserved but hidden for future use', async () => {
   const html = await read('index.html');
   const css = await read('styles.css');
